@@ -1,8 +1,9 @@
 import React from 'react'
 
-const AddAdvertisement = () => {
+const AddAdvertisement = props => {
+    const { advertisementContent } = props
     return (
-        <button>dupa32</button>
+        <button>{advertisementContent}</button>
     )
 }
 export default AddAdvertisement
