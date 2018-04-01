@@ -1,0 +1,15 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    max-height: 30px;
+    &__firstPart {
+        display: flex;
+        &__burgerPart {
+            margin-right: 10%;
+        }
+    }
+    &__secondPart {
+        display: flex;
+    }
+}

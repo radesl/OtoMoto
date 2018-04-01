@@ -1,9 +1,12 @@
 import React from 'react'
+import './style.scss'
 
 const Logo = props => {
     const { logoName } = props
     return (
-        <div><a>{logoName}</a></div>
+        <div className='Logo'>
+            <a>{logoName}</a>
+        </div>
     )
 }
 export default Logo

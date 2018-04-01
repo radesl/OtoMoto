@@ -1,9 +1,12 @@
 import React from 'react'
+import './style.scss'
 
 const AddAdvertisement = props => {
     const { advertisementContent } = props
     return (
-        <button>{advertisementContent}</button>
+        <div className='AddAdvertisement'>
+            <button>{advertisementContent}</button>
+        </div>
     )
 }
 export default AddAdvertisement
