@@ -1,6 +1,14 @@
 .AddAdvertisement {
-    button {
-        font-size: 12px;
+    &__button {
         max-width: 100px;
+        background-color: #142355;
+        border: none;
+        &__addIcon {
+        
+        }
+        &__buttonContent {
+            color: #fff;
+            font-size: 14px;
+        }
     }
 }
