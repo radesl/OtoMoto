@@ -1,14 +1,26 @@
+a {
+    text-decoration: none;
+}
 .AddAdvertisement {
+    box-shadow: 1px 1px 3px 1px #9E9E9E;
     &__button {
         max-width: 100px;
         background-color: #142355;
         border: none;
+        display: flex;
+        cursor: pointer;
+        padding: 1px;
+        transition: all 0.2s ease;
         &__addIcon {
-        
+            align-self: center;
+            margin: 0 2%;
         }
         &__buttonContent {
             color: #fff;
-            font-size: 14px;
+            font-size: 12px;
         }
+    }
+    &__button:hover {
+        background-color: rgba(20, 35, 85, 0.7);
     }
 }
