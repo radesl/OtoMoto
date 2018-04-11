@@ -1,0 +1,16 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    max-height: 30px;
+    &__firstPart {
+        display: flex;
+        align-items: flex-end;
+        &__burgerPart {
+            margin-right: 10%;
+        }
+    }
+    &__secondPart {
+        display: flex;
+    }
+}

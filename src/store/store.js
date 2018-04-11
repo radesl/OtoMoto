@@ -1,10 +1,10 @@
 import { compose, applyMiddleware, createStore } from 'redux'
-import blogReducer from './../reducers/reducers'
+import OtoMotoReducer from './../reducers/reducers'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
 
 const store = createStore(
-    blogReducer, /* preloadedState, */
+    OtoMotoReducer, /* preloadedState, */
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
