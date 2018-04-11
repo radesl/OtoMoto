@@ -16,9 +16,9 @@ export default (state = defaultState, action) => {
             const newState = Object.assign({}, state, {
                 isMobile: false
             })
-            return sewState
+            return newState
         }
-        default: defaultState
+        default: return defaultState
     }
 }
 

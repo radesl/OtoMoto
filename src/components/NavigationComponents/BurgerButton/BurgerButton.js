@@ -2,10 +2,13 @@ import React from 'react'
 import './style.scss'
 import Burger from './../../../../resources/icons/burger-24px.png'
 
-const BurgerButton = () => {
+const BurgerButton = props => {
+    const { isMobile } = props
     return (
-        <button className='BurgerButton'>
-            <img src={Burger}/>
+        <button className={isMobile
+            ? 'BurgerButton'
+            : 'BurgerButton--hidden'}>
+            <img src={Burger} />
         </button>
     )
 }
