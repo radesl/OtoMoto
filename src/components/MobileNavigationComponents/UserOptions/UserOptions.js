@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const MobileAddAdvertisement = props => {
+const UserOptions = props => {
     const { title } = props
     return (
         <Link to=''>
-            <div>
-                <div>{title}</div>
-            </div>
+            <div>{title}</div>
         </Link>
     )
 }
-export default MobileAddAdvertisement
+export default UserOptions
