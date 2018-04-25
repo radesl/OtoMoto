@@ -1,0 +1,11 @@
+.MobileAddAdvertisement {
+    background-color: #c82814;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    &__addIcon {
+        margin-right: 5px;
+    }
+}

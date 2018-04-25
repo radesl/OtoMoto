@@ -8,8 +8,8 @@ const MobileMenuSection = () => {
     return (
         <div className='MobileMenuSection'>
             <MobileAddAdvertisement title='add advertisement' />
-            <Favorite />
-            <MyOtoMoto />
+            <Favorite title='Favorite:'/>
+            <MyOtoMoto title='My Otomoto:'/>
         </div>
     )
 }
