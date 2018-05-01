@@ -1,5 +1,8 @@
 .MobileMenuSection {
     height: 100vh;
-    width: 40%;
+    width: 300px;
     background-color: #333333;
+    &--disable {
+        display: none;
+    }
 }

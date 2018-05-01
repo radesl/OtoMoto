@@ -1,7 +1,8 @@
 import { connect } from 'react-redux'
 
 const defaultState = {
-    isMobile: null
+    isMobile: null,
+    mobileMenuOpen: null
 }
 
 export default (state = defaultState, action) => {
@@ -18,9 +19,16 @@ export default (state = defaultState, action) => {
             })
             return newState
         }
+        case MOBILE_MENU_IS_OPEN: {
+            const newState = Object.assign({}, state, {
+                mobileMenuOpen: true
+            })
+            return newState
+        }
         default: return defaultState
     }
 }
 
 export const IS_MOBILE = 'IS_MOBILE'
 export const IS_NOT_MOBILE = 'IS_NOT_MOBILE'
+export const MOBILE_MENU_IS_OPEN = 'MOBILE_MENU_IS_OPEN'

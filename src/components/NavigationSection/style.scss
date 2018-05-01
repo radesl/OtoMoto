@@ -4,6 +4,9 @@
         display: flex;
         flex-direction: row-reverse;
         width: 130%;
+        &--disable {
+            width: 100%;
+        }
         &__buyerSection {
             width: 100%;
         }
