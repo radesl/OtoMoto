@@ -1,14 +1,13 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import MobileAddAdvertisement from './../MobileNavigationComponents/MobileAddAdvertisement'
 import Favorite from './../MobileNavigationComponents/Favorite'
 import MyOtoMoto from './../MobileNavigationComponents/MyOtoMoto'
 import './style.scss'
 
 const MobileMenuSection = props => {
-    const { isMobile } = props
+    const { isMobile, mobileMenuOpen } = props
     return (
-        <div className={isMobile
+        <div className={isMobile && mobileMenuOpen
             ? 'MobileMenuSection'
             : 'MobileMenuSection--disable'}>
             <MobileAddAdvertisement title='add advertisement' />
@@ -17,8 +16,4 @@ const MobileMenuSection = props => {
         </div>
     )
 }
-const mapStateToProps = state => {
-    const { isMobile } = state
-    return { isMobile }
-}
-export default connect(mapStateToProps)(MobileMenuSection)
+export default MobileMenuSection

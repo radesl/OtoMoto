@@ -6,17 +6,24 @@ import * as DATA_REDUCERS from './../../../reducers/reducers'
 class BurgerButtonContainer extends React.PureComponent {
     constructor() {
         super()
-        this.state
+        this.state = {
+            isOpen: false
+        }
+        this.toogleMenu = this.toogleMenu.bind(this)
     }
     toogleMenu() {
         const { openMenu } = this.props
+        const { isOpen } = this.state
+        openMenu(isOpen)
+        this.setState({
+            isOpen: !isOpen
+        })
 
     }
     render() {
-        console.log(this.props)
-        const { isMobile, openMenu } = this.props
+        const { isMobile } = this.props
         return (
-            <BurgerButton isMobile={isMobile} openMenu={openMenu} />
+            <BurgerButton isMobile={isMobile} toogleMenu={this.toogleMenu} />
         )
     }
 }
@@ -27,14 +34,14 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         openMenu: isOpen => {
-            const openMenu = new Promise((resolve, reject) => {
-                resolve(isOpen)
+            const openMenuPromise = new Promise((resolve, reject) => {
+                const mobileMenuOpen = isOpen
+                resolve(mobileMenuOpen)
             })
-                .then(isOpen => {
-                    console.log(isOpen)
+                .then(mobileMenuOpen => {
                     dispatch({
                         type: DATA_REDUCERS.MOBILE_MENU_IS_OPEN,
-                        mobileMenuOpen: isOpen
+                        mobileMenuOpen
                     })
                 })
         }

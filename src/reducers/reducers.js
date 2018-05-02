@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 
 const defaultState = {
     isMobile: null,
-    mobileMenuOpen: null
+    mobileMenuOpen: false
 }
 
 export default (state = defaultState, action) => {
@@ -21,7 +21,7 @@ export default (state = defaultState, action) => {
         }
         case MOBILE_MENU_IS_OPEN: {
             const newState = Object.assign({}, state, {
-                mobileMenuOpen: true
+                mobileMenuOpen: action.mobileMenuOpen
             })
             return newState
         }

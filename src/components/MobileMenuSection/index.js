@@ -1,1 +1,1 @@
-export { default } from './MobileMenuSection'
+export { default } from './MobileMenuSectionContainer'
