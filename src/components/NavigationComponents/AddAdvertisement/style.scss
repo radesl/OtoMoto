@@ -3,6 +3,9 @@ a {
 }
 .AddAdvertisement {
     box-shadow: 1px 1px 3px 1px #9E9E9E;
+    &--disable {
+        display: none;
+    }
     &__button {
         max-width: 100px;
         background-color: #142355;

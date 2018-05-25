@@ -1,1 +1,1 @@
-export { default } from './AddAdvertisement'
+export { default } from './AddAdvertisementContainer'

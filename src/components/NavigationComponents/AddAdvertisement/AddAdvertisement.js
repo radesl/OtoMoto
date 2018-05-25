@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 import addIcon from './../../../../resources/icons/add-16px.png'
 
 const AddAdvertisement = props => {
-    const { advertisementContent } = props
+    const { mobileMenuOpen, isMobile, advertisementContent } = props
     return (
         <Link to=''>
-            <div className='AddAdvertisement'>
+            <div className={(mobileMenuOpen && isMobile)
+                ? 'AddAdvertisement--disable'
+                : 'AddAdvertisement'}>
                 <button className='AddAdvertisement__button'>
                     <div className='AddAdvertisement__button__addIcon'>
                         <img src={addIcon} />
