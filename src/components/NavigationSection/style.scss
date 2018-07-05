@@ -1,14 +1,5 @@
 .NavigationSection {
-    overflow: hidden;
-    display: flex;
-    &__wrapper {
-        display: flex;
-        flex-direction: row-reverse;
-        &--disable {
-            width: 100%;
-        }
-        &__buyerSection {
-            width: 100vw;
-        }
+    &__buyerSection {
+        width: 100vw;
     }
 }
